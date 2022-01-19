@@ -19,14 +19,14 @@ public class Main {
 			
 		if (b<45) {
 			System.out.print(a-1);	
-			System.out.print(" "60-(45-b));		
+			System.out.print(60-(45-b));		
 		}
 		
 		}
 		if (a<1) {
 			if(b<45) {
 				System.out.print(23);
-				System.out.print(" "60-(45-b));
+				System.out.print(60-(45-b));
 				
 			}
 		}
