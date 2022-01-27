@@ -1,0 +1,49 @@
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Scanner;
+ 
+public class Main {
+ 
+	
+	public static void main(String[] args) {
+ 
+		Scanner sc = new Scanner(System.in);
+		
+	int a = sc.nextInt();
+	String arr[]=new String[a];
+	
+	for(int i =0;i<a;i++) {
+		arr[i]=sc.next();
+	}
+	Arrays.sort(arr);
+	Arrays.sort(arr,Comparator.comparing(String ::length));
+	
+	for(int i =0;i<a;i++) {
+		for(int j=0;j<a;j++) {
+			if(arr[i].length()==arr[j].length()) {
+				arr[i].compareTo(arr[j]);
+				
+				 {
+					
+					
+				}
+				
+			
+			}
+		}
+	}
+	for(int i =0;i<a;i++) {
+		for(int j=0;j<a;j++) {
+			if(i!=j&arr[i]==arr[j]) {
+				arr[j]=null;
+			}
+		}
+		}
+	for(int i=0;i<a;i++) {
+
+			
+			
+			System.out.println(arr[i]);
+		}
+	}
+	}
