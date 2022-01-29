@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+	
+	
+
+	public static void main(String[] args) {
+ 
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		String arr[]=new String[a];
+		int count= a;
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=sc.next();
+			
+			
+		}
+		
+		for(int i=0;i<arr.length;i++) {
+		Outter:	for(int j=0;j<arr[i].length();j++) {
+				for(int k=0;k<arr[i].length();k++) {
+					if(j!=k&&j!=(k+1)&&(arr[i].charAt(j)==arr[i].charAt(k))) {
+						count--;
+						break Outter;
+					
+					}
+					}
+					
+				}
+			}
+	
+		
+		System.out.println(count);
+		}
+			
+		
+	}
+	
