@@ -1,0 +1,49 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main {
+ 
+	
+	
+	public static void main(String[] args) {
+ 
+		Scanner sc = new Scanner(System.in);
+		
+		int a = sc.nextInt();
+		int arr[]= new int [6];
+		//[0]=x1 [1] = y1 [2] =r1 [3] = x2 [4] =y2 [5] = r2
+		for(int i=0;i<a;i++) {
+			for(int j=0;j<6;j++) {
+				arr[j]=sc.nextInt();
+				
+						
+					}
+			if(Math.sqrt(Math.pow(arr[3]-arr[0], 2)+(Math.pow(arr[4]-arr[1], 2)))>arr[2]+arr[5]) {
+				
+				System.out.println(0);}
+				
+				else if(arr[0]==arr[1]&&arr[1]==arr[3]&&arr[3]==arr[4]&&arr[2]==arr[5]) {
+					
+					System.out.println(-1);}
+			
+				else if (arr[0]==arr[3]&&arr[1]==arr[4]&&arr[2]!=arr[5]) {
+					System.out.println(0);
+				}
+				else if (Math.sqrt(Math.pow(arr[3]-arr[0], 2)+(Math.pow(arr[4]-arr[1], 2)))<arr[2]+arr[5]) {
+					
+					System.out.println(2);
+					}
+					
+					else if(Math.sqrt(Math.pow(arr[3]-arr[0], 2)+(Math.pow(arr[4]-arr[1], 2)))==arr[2]+arr[5]){
+						
+						System.out.println(1);}
+						
+						else if(Math.sqrt(Math.pow(arr[3]-arr[0], 2)+(Math.pow(arr[4]-arr[1], 2)))==Math.abs(arr[5]-arr[2])) {
+							
+						System.out.println(1);}
+						
+						
+						}
+						}
+					
+				}
+				
