@@ -17,7 +17,7 @@ public class Main {
 	 //arr[0]=출발점x1 arr[1]=출발점y1 arr[2]= 도착점x2 arr[3]=도착점y2
 	 
 	 for(int i=0;i<a;i++) {
-		 for(int l=0;i<arr.length;i++) {
+		 for(int l=0;l<arr.length;l++) {
 		arr[l]= sc.nextInt();
 		}
 		 
@@ -29,15 +29,16 @@ public class Main {
 		//arr2[0] = cx1 arr2[1] = cy1 arr2[2] = r
 				}
 	
-				if(Math.sqrt(Math.pow(arr2[0]-arr[0], 2)+(Math.pow(arr2[1]-arr[1], 2) ))<arr2[2]) {
+				if(Math.sqrt(Math.pow(arr2[0]-arr[0], 2)+((Math.pow(arr2[1]-arr[1], 2) )))<arr2[2]) {
 					count++;}
 					if(Math.sqrt(Math.pow(arr2[0]-arr[2], 2)+(Math.pow(arr2[1]-arr[3], 2) ))>arr2[2]) {
 						count++;
 					}
 					
 					
-				} // 여기 for문이 끝나면 젤위 for문으로 올라가야하는데 왜 안올라가지지?
+				} 
 			System.out.println(count);
+			count =0;
 			}// 젤 처음 for문 
 		
 	 		}
