@@ -14,29 +14,33 @@ for(int i=0;i<a;i++) {
 	int count1=0;
 	for(int j=0;j<Integer.toString(f(n)).length()-1;j++) {
 		if(Integer.toString(f(n)).charAt(j)==1) {
-			count0++;
+			count1++;
 		}
 		else if (Integer.toString(f(n)).charAt(j)==0){
-			count1++;
+			count0++;
 			
 		}
+		System.out.print(count0+" "+count1);
+		
+	}
 
-	}
-	System.out.print(count0+" "+count1);
 	
 	}
 	
+
+
 	}	
 	static int f(int n) {
 	    if (n == 0) {
-	    	System.out.print("0");
+	    System.out.print(0);
 	    return 0;
 	    }       
 	       
 	    else if (n == 1) {
 	        
-	        System.out.print("1");
-	        return 1;	    	
+	       System.out.print(1);
+	       return 1;	
+	       
 	       
 	    } else {
 	        return f(n-1)+f(n-2)
@@ -44,3 +48,4 @@ for(int i=0;i<a;i++) {
 	    }
 	}
 }
+	
