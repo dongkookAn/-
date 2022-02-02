@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+	public static void main(String[] args) {
+		
+	Scanner sc = new Scanner(System.in);
+	
+	int a = sc.nextInt();//게임횟수
+	int b= sc.nextInt();//이긴게임}
+	int z =(b/a)*100;
+	int count =0; 
+	while((int)((b/a)*100)==z) {
+		if(z<50) {
+			a++;
+			b++;
+			count++;
+		}
+		if(z>50) {
+			a++;
+			count++;
+		}
+		
+	}
+	System.out.println(count);
+	}
+}
